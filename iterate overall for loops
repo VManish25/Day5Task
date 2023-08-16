@@ -1,0 +1,59 @@
+FOR THE GIVEN JSON ITERATE OVER ALL FOR LOOPS (FOR, FOR IN, FOR OF, FOR EACH)
+
+ 
+for loop
+
+let arr = [1, 2, 3, 4, 5];
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+
+for...in
+
+let names = ["John", "Jack", "Alice"];
+for (let i in names) {
+  console.log(names[i]);
+}
+
+
+for...of
+
+
+let names = ["John", "Jack", "Alice"];
+for (let i of names) {
+  console.log(i);
+}
+
+
+forEach()
+
+let array = [{
+    id: 1,
+    name: 'John',
+    age: 12
+  },
+  {
+    id: 2,
+    name: 'Jane',
+    age: 14
+  },
+  {
+    id: 3,
+    name: 'Martin',
+    age: 13
+  },
+  {
+    id: 4,
+    name: 'Katie',
+    age: 17
+  },
+  {
+    id: 5,
+    name: 'Louis',
+    age: 11
+  }
+];
+array.forEach(function (profile, index, arr) {
+  console.log(`Index: ${index}, Name: ${profile.name}`);
+});
